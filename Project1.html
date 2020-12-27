@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webiste Design Project</title>
+    <style>
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('img/bg.jpg');
+        }
+        
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 23px;
+            left: 20px;
+            /* border: 2px solid green; */
+        }
+        
+        .mid {
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid yellow; */
+        }
+        
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 23px;
+            right: 20px;
+            /* border: 2px solid red; */
+            animation-name: animate__rollIn;
+        }
+        
+        .btn {
+            width: 90px;
+            padding: 5px;
+            border-radius: 17px;
+            cursor: pointer;
+            margin: 10px 120px;
+        }
+        
+        .left img {
+            height: 110px;
+            width: 160px;
+            filter: invert(100%);
+        }
+        
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(255, 211, 14);
+            /* background-color:rgb(55, 55, 78); */
+        }
+        
+        .btn:hover {
+            background-color: cadetblue;
+            color: black;
+        }
+        
+        .navbar li {
+            display: inline-block;
+        }
+        
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        .container {
+            border: 1px solid white;
+            margin: 3px auto;
+            margin-top: 80px;
+            border-radius: 3px;
+            padding: 3px;
+            width: 40%;
+            animation-name: animate__rollIn;
+        }
+        
+        .container {
+            border: 2px solid white;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .form-group input {
+            width: 60%;
+            margin: 3px auto;
+            padding: 5px;
+            display: block;
+            border-radius: 6px;
+        }
+        
+        .form-group input:hover {
+            background-color: rgb(182, 182, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg.jpg">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Inquiry</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button type="button" class="btn">Call Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Travel all the City Tour</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name"></type:text><br>
+                <input type="email" placeholder="Enter your valid email id"></type:text><br>
+                <input type="number" placeholder="Enter your mobile number"></type:text><br>
+                <input type="date" placeholder="Enter your bithdate"></type:text><br>
+                <button class="btn">Submit</button>
+
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
